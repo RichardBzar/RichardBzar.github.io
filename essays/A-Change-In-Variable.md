@@ -25,3 +25,7 @@ C++. The Strict and complicated ruleset enforced when creating variables and doi
 experience with Javascript. When I first came in contact with Javascript through the freecodecamp exercises, I found myself astonished by how loose the regulations 
 were for things such as creating functions, and passing parameters with other functions and variables that have no types. It took me a while to comprehend the 
 shift in syntax to where what would be imposible in other languages
+
+## Current Thoughts
+
+My current thoughts of Javascript haven't really changed much from my intial impressions.
