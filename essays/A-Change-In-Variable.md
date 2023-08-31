@@ -23,4 +23,5 @@ rigid mindset led me to believe that a computer wasnt advanced enough to keep va
 adhered to. I would have never thought that there would be such flexibility in a programming language, especially after I came a few months ago from learning C and 
 C++. The Strict and complicated ruleset enforced when creating variables and doing processes with the c programming language differed greatly from my first 
 experience with Javascript. When I first came in contact with Javascript through the freecodecamp exercises, I found myself astonished by how loose the regulations 
-were for things such as creating functions, and passing parameters with other functions and variables that have no types.
+were for things such as creating functions, and passing parameters with other functions and variables that have no types. It took me a while to comprehend the 
+shift in syntax to where what would be imposible in other languages
