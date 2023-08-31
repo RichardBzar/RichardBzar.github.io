@@ -28,4 +28,5 @@ shift in syntax to where what would be imposible in other languages
 
 ## Current Thoughts
 
-My current thoughts of Javascript haven't really changed much from my intial impressions.
+My current thoughts of Javascript haven't really changed much from my intial impressions. To me Javascript is a programming language that lathough not as loose as
+python, it is easier to cpmprehend than Java or C++.
