@@ -10,8 +10,11 @@ labels:
   - Javascript
 ---
 ## Background
-
-When I first took computer science courses, I had no previous experience in computer programming, as I never had any previous encounters with any computer IDE's, much less programming language. Going into my first computer science class ICS 111, an introductory class that introduces students to programming through Java, it took me some time for me to master the basics. I saw what the teacher coded and emulated it learning how each word is important for each line of code. I struggled with the first month or so as Java to me felt like a hurdle that differed from any math or common core subjects for which I had to study for, it was an entirely new realm to which I had to learn entirely new laws.
+When I first took computer science courses, I had no previous experience in computer programming, as I never had any previous encounters with any computer IDE's, 
+much less programming language. Going into my first computer science class ICS 111, an introductory class that introduces students to programming through Java, it 
+took me some time for me to master the basics. I saw what the teacher coded and emulated it learning how each word is important for each line of code. I struggled 
+with the first month or so as Java to me felt like a hurdle that differed from any math or common core subjects for which I had to study for, it was an entirely new 
+realm to which I had to learn entirely new laws.
 
 ## Initial Thoughts
 
