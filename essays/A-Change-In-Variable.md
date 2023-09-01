@@ -8,6 +8,7 @@ published: true
 labels:
   - Programming
   - Javascript
+summary: "My essay about my experience with Javascript"
 ---
 ## Background
 When I first took computer science courses, I had no previous experience in computer programming, as I never had any previous encounters with any computer IDE's, 
@@ -28,5 +29,5 @@ shift in syntax to where what would be imposible in other languages
 
 ## Current Thoughts
 
-My current thoughts of Javascript haven't really changed much from my intial impressions. To me Javascript is a programming language that lathough not as loose as
-python, it is easier to cpmprehend than Java or C++.
+My current thoughts of Javascript haven't really changed much from my intial impressions. To me Javascript is a programming language that although not as loose as
+python, it is easier to copmprehend than Java or C++. It is a language that flourishes in the goldilocks zone of programming where a person who wants to develop an application but doesn't want the hassle of being bound by the rigid structure of variable type declaration.
