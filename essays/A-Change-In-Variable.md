@@ -25,8 +25,10 @@ they did not need to be assigned a type that they adhered to. I would have never
 after I came a few months ago from learning C and C++. The Strict and complicated ruleset enforced when creating variables and doing processes with the C 
 programming language differed greatly from my first experience with Javascript. When I first came in contact with Javascript through the freecodecamp exercises, I 
 found myself astonished by how loose the regulations were for things such as declaring variables freely, creating functions, and passing parameters with other 
-functions. It took me a while to comprehend the shift in syntax to where what would be imposible in other languages could be done with in Javascript. The C syntax 
-of micromanaging the variables and what the functions thet are used in felt like an overwhelming vhallenge compared to the convenience of Javascript syntax.
+functions. It took me a while to comprehend the shift in syntax to where what would be imposible in other languages could be done with in Javascript. The usual C 
+syntax situations of micromanaging the variables felt like an overwhelming challenge compared to the convenience of Javascript syntax where you could freely change 
+a variable's type to whatever you desire. After taking some time and testing Javascipt, this astonishment gradually shifted to excitement about discovering a more 
+efficent too.lset
 
 ## Current Thoughts
 
