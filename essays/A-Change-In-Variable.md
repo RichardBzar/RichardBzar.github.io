@@ -19,15 +19,17 @@ realm to which I had to learn entirely new laws.
 
 ## Initial Thoughts
 
-Javascript has been a turning point for me. It shattered my preconceived notions for some aspects of programming, most notably the typesetting of variables. My 
-rigid mindset led me to believe that a computer wasnt advanced enough to keep variables in a dynamic position where they did not need to be assigned a type that they 
-adhered to. I would have never thought that there would be such flexibility in a programming language, especially after I came a few months ago from learning C and 
-C++. The Strict and complicated ruleset enforced when creating variables and doing processes with the c programming language differed greatly from my first 
-experience with Javascript. When I first came in contact with Javascript through the freecodecamp exercises, I found myself astonished by how loose the regulations 
-were for things such as creating functions, and passing parameters with other functions and variables that have no types. It took me a while to comprehend the 
-shift in syntax to where what would be imposible in other languages
+Javascript has been a turning point for me. It shattered my preconceived notions for some aspects of programming I thought were a necessity to function correctly, 
+most notably the typesetting of variables. My rigid mindset led me to believe that a computer was not capable enough to keep variables in a dynamic status where 
+they did not need to be assigned a type that they adhered to. I would have never thought that there would be such flexibility in a programming language, especially 
+after I came a few months ago from learning C and C++. The Strict and complicated ruleset enforced when creating variables and doing processes with the C 
+programming language differed greatly from my first experience with Javascript. When I first came in contact with Javascript through the freecodecamp exercises, I 
+found myself astonished by how loose the regulations were for things such as declaring variables freely, creating functions, and passing parameters with other 
+functions. It took me a while to comprehend the shift in syntax to where what would be imposible in other languages could be done with in Javascript. The C syntax 
+of micromanaging the variables and what the functions thet are used in felt like an overwhelming vhallenge compared to the convenience of Javascript syntax.
 
 ## Current Thoughts
 
-My current thoughts of Javascript haven't really changed much from my intial impressions. To me Javascript is a programming language that although not as loose as
-python, it is easier to copmprehend than Java or C++. It is a language that flourishes in the goldilocks zone of programming where a person who wants to develop an application but doesn't want the hassle of being bound by the rigid structure of variable type declaration.
+Currently, my current thoughts of Javascript haven't really changed much from my intial impressions. To me Javascript is a programming language that although not 
+as loose aspython, it is easier to copmprehend than Java or C++. It is a language that flourishes in the goldilocks zone of programming where a person who wants to 
+develop an application but doesn't want the hassle of being bound by the rigid structure of variable type declaration.
