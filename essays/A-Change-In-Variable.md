@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "A Change In Variable"
 # All dates must be YYYY-MM-DD format!
-date: 2023-08-30
+date: 2023-08-31
 published: true
 labels:
   - Programming
