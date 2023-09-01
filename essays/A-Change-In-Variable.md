@@ -28,7 +28,7 @@ found myself astonished by how loose the regulations were for things such as dec
 functions. It took me a while to comprehend the shift in syntax to where what would be imposible in other languages could be done with in Javascript. The usual C 
 syntax situations of micromanaging the variables felt like an overwhelming challenge compared to the convenience of Javascript syntax where you could freely change 
 a variable's type to whatever you desire. After taking some time and testing Javascipt, this astonishment gradually shifted to excitement about discovering a more 
-efficent too.lset
+efficent toolset. The WODS where javascript had to be used also further enhanced my understanding of the programming language and its benefits. 
 
 ## Current Thoughts
 
@@ -36,4 +36,4 @@ Currently, my thoughts of Javascript haven't really changed much from my intial 
 as loose as python, it is easier to copmprehend than Java or C++. It is a language that flourishes in the goldilocks zone of programming where a person who wants 
 to develop an application but doesn't want the hassle of being bound by the rigid structure of variable type declaration could create variables and use them in 
 functions easily. Javascript brought me a new outlook to prorgamming, no longer did it feel like a textbook process, but now it feels like a multiple version work 
-that has many ways of interepretations according to your will.
+that has many ways of interepretations according to your will.  
