@@ -50,8 +50,5 @@ class Student{
     public void setName(String name) {
         this.name = name;
     }
-    public String toString(){
-        return "";
-    }
 }
 ```
