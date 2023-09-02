@@ -22,7 +22,11 @@ encapsulated, only allowing access through mutaters and setters.
 
 The bus file managed to make use of the student file in order to have a student array datatype that gives the object a way to express how many students are inside
 the bus. There are also integers to represent the bus's capacity and how many are currently inside the buss. The main functions the bus has with this file is to 
-add students to the bus, remve students from the bus by name, and display all the students information.
+add students to the bus, remove students from the bus by name, and display all the students information. The bus can't be over max occupancy otherwise the add 
+student function will not add more students to teh predeclared array in the bus.
+
+The last file, the driver file, basically jsut asks for user input in a text based ui hosted on the command line to access the diffrent functions of the bus file 
+and display how each function operates.
 
 This is the code for the student objects that are stored in the buses array property
 ```cpp
