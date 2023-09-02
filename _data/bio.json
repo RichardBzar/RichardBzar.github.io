@@ -42,9 +42,7 @@
       "courses": [
         "ICS 311 Algorithms"
       ]
-    }
-  ],
-  "Certifications": [
+    },
     {
       "Certificate": "Comptia A+ 1101-1102",
       "skills": "Technical Support/Computer Troubleshooting",
@@ -54,8 +52,7 @@
       "highlights": [
         "Troubleshoot computer software and hardware issues",
         "Knowledge of network infastructure and computer parts"
-      ]
-    },
+    }
   ],
   "volunteer": [
     {
@@ -70,7 +67,7 @@
       "title": "Dean's List",
       "date": "2020-2021",
       "awarder": "UH Manoa",
-      "summary": "Givent o students who maintain a GPA of >3.5"
+      "summary": "Givent to students who maintain a GPA of >3.5"
     }
   ],
   "references": [
