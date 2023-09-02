@@ -11,9 +11,17 @@ labels:
   - Programming
 summary: "An HTML website about my favorite animations of different artstyles that I created when learning how to program HTML 5."
 ---
-<img width="400px" height="220px" src="../img/jiang-ziya-1.jpg" class="img-thumbnail" >
+<img width="440px" height="320px" src="../img/Untitled.png" class="img-thumbnail" >
 
-After taking my first programming class, I wanted to learn HTML, and this website was my first experience creating a basic webpage utilizing HTML 5.
+After taking my first programming class, I wanted to learn HTML, and this website was my first experience creating a basic webpage utilizing HTML 5. The website 
+uses header and p tags for text, has hyperliks embedded into text, images displayed for visual representations, adn radio buttons that takes your choice as input. 
+The website is composed of three sections that are divided with div tags. Each section has a single picture of the animation for the style the section mainly
+focuses on. It also contains a prompt composed of a label, radio buttons, and regular buttons asking if you enjoyed this specific style of animation in your own 
+life. I arranged my list for each style to be under the pictures of each section in an ordered list. 
+
+For each lsit, three of my favorite animations are listed alongside my personal interepretation of how these shows/films were portrayed as. This 
+project utilizes the basic functions of HTML to facilitate a visual representation of my list of favorite animations and design a layout to show the subjects
+with optional user interaction in the radio buttons. 
 
 This is the code for the Chinese animation section of the website's html:
 
