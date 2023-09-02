@@ -14,7 +14,7 @@ summary: "An HTML website about my favorite animations of different artstyles th
 <img width="440px" height="320px" src="../img/Untitled.png" class="img-thumbnail" >
 
 After taking my first programming class, I wanted to learn HTML, and this website was my first experience creating a basic webpage utilizing HTML 5. The website 
-uses header and p tags for text, has hyperliks embedded into text, images displayed for visual representations, adn radio buttons that takes your choice as input. 
+uses header and p tags for text, has hyperliks embedded into text, images displayed for visual representations, and radio buttons that takes your choice as input. 
 The website is composed of three sections that are divided with div tags. Each section has a single picture of the animation for the style the section mainly
 focuses on. It also contains a prompt composed of a label, radio buttons, and regular buttons asking if you enjoyed this specific style of animation in your own 
 life. I arranged my list for each style to be under the pictures of each section in an ordered list. 
@@ -51,4 +51,4 @@ This is the code for the Chinese animation section of the website's html:
   <button>Submit</button>
 </div>
 ```
-<img width="440px" height="320px" src="../img/Favorite Animations - Google Chrome 9_1_2023 11_01_46 PM (2).png" class="img-thumbnail" >
+<img width="540px" height="440px" src="../img/Favorite Animations - Google Chrome 9_1_2023 11_01_46 PM (2).png" class="img-thumbnail" >
