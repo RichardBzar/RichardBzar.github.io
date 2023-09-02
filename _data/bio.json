@@ -11,8 +11,6 @@
     "profiles": [
       { "network": "github", "username": "RichardBzar", "url": "http://github.com/richardbzar" },
       { "network": "linkedin", "username": "Richard Baltazar", "url": "http://linkedin.com/in/changeme" },
-      { "network": "twitter", "username": "", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "", "url": "http://instagram.com/changeme" }
     ]
   },
   "interests": [
