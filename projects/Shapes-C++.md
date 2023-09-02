@@ -12,7 +12,7 @@ labels:
   - Programming
 summary: "An assignment where I utilized inheritance in the C++ programming language to design shapes that derive from other shape classes, that in turn derive from the master shape class"
 ---
-<img width="400px" height="220px" src="img/jiang-ziya-1.jpg" class="img-thumbnail" >
+<img width="400px" height="220px" src="../img/jiang-ziya-1.jpg" class="img-thumbnail" >
 
 This is an example portion of the assignment, where a circle is derived from a shape, and a sphere is derived from a circle
 ```cpp
