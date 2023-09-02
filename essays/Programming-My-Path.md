@@ -4,7 +4,7 @@ type: essay
 title: "Programming My path"
 # All dates must be YYYY-MM-DD format!
 date: 2023-09-01
-published: false
+published: true
 labels:
   - Programming
   - Software Engineering
