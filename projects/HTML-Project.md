@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/cotton/cotton-square.png
+image: img/download (1).png
 title: "Favorite Animation Website Personal Project"
 # All dates must be YYYY-MM-DD format!
 date: 2020-07-12
