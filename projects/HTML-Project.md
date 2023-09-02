@@ -19,9 +19,14 @@ The website is composed of three sections that are divided with div tags. Each s
 focuses on. It also contains a prompt composed of a label, radio buttons, and regular buttons asking if you enjoyed this specific style of animation in your own 
 life. I arranged my list for each style to be under the pictures of each section in an ordered list. 
 
-For each lsit, three of my favorite animations are listed alongside my personal interepretation of how these shows/films were portrayed as. This 
-project utilizes the basic functions of HTML to facilitate a visual representation of my list of favorite animations and design a layout to show the subjects
-with optional user interaction in the radio buttons. 
+For each lsit, three of my favorite animations are listed alongside my personal interepretation of how these shows/films were portrayed as. The ordered list is 
+positioned just below the pictures and titles of the section uniformly. Each pictures are adjusted with their height and width to a bigger scale than they're 
+intial values in order to match the length of the ordered lists. This project utilizes the basic functions of HTML to facilitate a visual representation of 
+my list of favorite animations and design a layout to show the subjects with optional user interaction in the radio buttons. 
+
+The main section of the website is also separated from the footer section with a hr tag to differentiate the body content from the final activity of entereing text 
+in a text area input. The final input, the text area has a default shadow value included to show what type of answer is meant to be placed inside the box. A submit
+button is positioned next to the text area to act as a signifier of completion.
 
 This is the code for the Chinese animation section of the website's html:
 
