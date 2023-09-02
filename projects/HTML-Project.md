@@ -11,7 +11,7 @@ labels:
   - Programming
 summary: "An HTML website about my favorite animations of different artstyles that I created when learning how to program HTML 5."
 ---
-<img width="400px" height="220px" src="img/jiang-ziya-1.jpg" class="img-thumbnail" >
+<img width="400px" height="220px" src="../img/jiang-ziya-1.jpg" class="img-thumbnail" >
 
 After taking my first programming class, I wanted to learn HTML, and this website was my first experience creating a basic webpage utilizing HTML 5.
 
