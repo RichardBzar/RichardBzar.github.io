@@ -26,7 +26,7 @@ add students to the bus, remove students from the bus by name, and display all t
 student function will not add more students to teh predeclared array in the bus.
 
 The last file, the driver file, basically jsut asks for user input in a text based UI hosted on the command line to access the diffrent functions of the bus file 
-and display how each function operates. The user can repeatedly acces commands from teh driver until entering a 0 as a response. After succesful completion, the 
+and display how each function operates. The user can repeatedly acces commands from the driver until entering a 0 as a response. After succesful completion, the 
 driver file will signify the end of the intereaction with a thank you message.
 
 This is the code for the student objects that are stored in the buses array property
