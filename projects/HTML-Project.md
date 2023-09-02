@@ -51,3 +51,4 @@ This is the code for the Chinese animation section of the website's html:
   <button>Submit</button>
 </div>
 ```
+<img width="440px" height="320px" src="../img/Favorite Animations - Google Chrome 9_1_2023 11_01_46 PM (2).png" class="img-thumbnail" >
