@@ -15,8 +15,8 @@ summary: "An assignment where I demonstrated inheritance in the C++ programming 
 <img width="400px" height="220px" src="../img/Basic_shapes.svg.png" class="img-thumbnail" >
 
 After learning Java and HTML, my class at the time required me to learn the basic aspects of the C/C++ programming language. This project helped me gain efficiency 
-in the language and learned how to operate object oriented programming using the new syntax. The project allowed me to gain insight intothe different ways that the 
-C programming language implements inheritence compared to other languages I've used.
+in the language and learned how to operate object oriented programming using the new syntax. The project allowed me to gain insight into the different ways that 
+the C programming language implements inheritence compared to other languages I've used.
 
 The program asks users to input a shape from a list of 7 shapes that you would want to create. It then asks for the dimensions of the shape and uses those 
 measurements to display the shapes volume and the predecessor/parent class objects dimensions (Sphere . Circle). The inheritence is used for this activity to show 
