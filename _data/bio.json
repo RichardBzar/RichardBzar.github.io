@@ -51,6 +51,12 @@
       ]
     }
   ],
+  "Certifications": {
+    "institution": "Comptia",
+    "area": "Comptia A+ 1101-1102",
+    "startDate": "2022",
+    "endDate": "2025"
+  },
   "volunteer": [
     {
       "organization": "Malama A'ina",
