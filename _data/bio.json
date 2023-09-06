@@ -41,18 +41,6 @@
         "ICS 311 Algorithms"
       ]
     },
-    "certifications": [
-  {
-    "title": "Certification Name 1",
-    "issuer": "Certification Authority 1",
-    "date": "2023-01-15"
-  },
-  {
-    "title": "Certification Name 2",
-    "issuer": "Certification Authority 2",
-    "date": "2023-05-20"
-  }
-],
     {
       "institution": "Comptia",
       "area": "Comptia A+ 1101-1102",
