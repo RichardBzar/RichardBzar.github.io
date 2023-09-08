@@ -4,7 +4,7 @@ type: essay
 title: "An Overflow Of Inquiry"
 # All dates must be YYYY-MM-DD format!
 date: 2023-09-07
-published: false
+published: true
 labels:
   - Stack-Overflow
   - SMART questions
@@ -18,10 +18,13 @@ Sometimes, a software developer would find themselves lost in a clueless situati
 
 ## Unknown Technical Processes
 
-SMART questions can be found in multiple forums, one such forum is stack overflow. In stack overflow, one of the posts that ask a smart question probes an answer for the inquiry about ["Why is processing of a sorted array faster than an unsorted array"](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array). 
+SMART questions can be found in multiple forums, one such forum is stack overflow. In stack overflow, one of the posts that ask a smart question probes an answer for the inquiry about ["Why is processing a sorted array faster than processing an unsorted array?"](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array). 
 This question from stack overflow has the user ask the forum, a question that although sounding easy to explain, once you go in depth to it is hard to clarify clearly. The question theuser asks is, why would processing a sorted array be faster than processing an unsorted array?. The user in the forum had a sudden curiosity as he experienced a programming situation where somehthing unexpected occured, a difference in completion for the same task on two different arrays where one was sorted and the other wasn't. He had used the inputted array in an algorithm where being sorted theoretically wouldn't affect the runtime of the algorithm, as  no sorting was needed to lower the overall runtime. Although the algorithm was unambiguous in the code to filter through an array, the user still had a lower recoreded time on presorted arrays over unsorted arrays.
 
 ## The  Detrimental Ambiguity Of Not So Smart Questions
 
-If a forum is not explicit, explaining all context towards the intended problem, people would find it hard to answer the post, as the question may be too ambiguous in its format. Having a question being broad makes it aharder for people to find a solution that encompasses the problem, this was the case for the stack overflow post asking  ["What is the difference between java and javascript?"](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array](https://stackoverflow.com/questions/245062/whats-the-difference-between-javascript-and-java#:~:text=Java%20is%20class%2Dbased%3B%20JavaScript,constructors%22%20are%20just%20standard%20functions.)https://stackoverflow.com/questions/245062/whats-the-difference-between-javascript-and-java#:~:text=Java%20is%20class%2Dbased%3B%20JavaScript,constructors%22%20are%20just%20standard%20functions.)
+If a forum is not explicit, explaining all context towards the intended problem, people would find it hard to answer the post, as the question may be too ambiguous in its format. Having a question being broad makes it harder for people to find a solution that encompasses the problem, this was the case for the stack overflow post asking  ["What is the difference between java and javascript?"](https://stackoverflow.com/questions/245062/whats-the-difference-between-javascript-and-java#:~:text=Java%20is%20class%2Dbased%3B%20JavaScript,constructors%22%20are%20just%20standard%20functions.). Unlike the previous smart question which provides a context to the situation where it seemed ubnderstandable that they would not be able to find an answer elsewhere, this question had broad contexts that allowed for more general interepretation of the question. There is no added context in the prompt, just this single question that seems broad, "What is teh difference between java and javascript?". This question and post isn't so smart as the user would be able to find the diffrences of java and javascript in other sources before making this post, which would allow a more specialized smart question to be made at the time, such as "why is the syntax for creating variables in javascript is so different compared to java?" Having a general answer would also be detrimental to learning more about the said question, as details would be omitted to give a more convenient explanation for the solver to answer the broad topic.
 
+## Conclusion
+
+Overall, SMART questions are a key tool that can't be skipped to have a quick convenient question replace it. It is important to be precise and explicit when asking a question, keep all context in the open and clearly state the goal that you want achieved while answering the question.
