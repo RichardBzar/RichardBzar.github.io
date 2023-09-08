@@ -12,9 +12,9 @@ summary: "An essay about a well made question I found in stack overflow"
 ---
 <img width="225px" height="225px" src="../img/sflow-logo.png" class="img-thumbnail" >
 
-## How SMART questions are an essential tool for software engineeers
+## How SMART Questions Are An Essential Tool For Software Engineeers
 
-Sometimes, a software developer would find themselves lost in a clueless situation where they don't have any idea what to do next. In this situation, what would be the best option for the person? Stack Overflow? Yeah.... prob 9/10 times, but how do you display your worries in a set of words that form an inquiry that would get you most if not all the answers you had hoped to gain? the answer to this is to ask a SMART question on the forum. With the advent of CHATGPT, the importance of formatting your words correctly in a question magnified drastically. In internet forums, much like chatgpt, a post would need to be formatted to a point where the overall context, the question, and what you're trying to find out can be seen through you're words posted. In forums, the user/ the software engineer has a goal they want to achieve, smart questions are essential to accomplish this as they help give a more appropriate answer that solves the post.
+Sometimes, a software developer would find themselves lost in a clueless situation where they don't have any idea what to do next. In this situation, what would be the best option for the person? Stack Overflow? Yeah.... prob 9/10 times, but how do you display your worries in a set of words that form an inquiry that would get you most if not all the answers you had hoped to gain? the answer to this is to ask a SMART question on the forum. With the advent of ChatGPT, the importance of formatting your words correctly in a question magnified drastically. In internet forums, much like chatgpt, a post would need to be formatted to a point where the overall context, the question, and what you're trying to find out can be seen through you're words posted. In forums, the user/ the software engineer has a goal they want to achieve, smart questions are essential to accomplish this as they help give a more appropriate answer that solves the post.
 
 ## Unknown Technical Processes
 
@@ -24,6 +24,19 @@ This question from stack overflow has the user ask the forum, a question that al
 ## The  Detrimental Ambiguity Of Not So Smart Questions
 
 If a forum is not explicit, explaining all context towards the intended problem, people would find it hard to answer the post, as the question may be too ambiguous in its format. Having a question being broad makes it harder for people to find a solution that encompasses the problem, this was the case for the stack overflow post asking  ["What is the difference between java and javascript?"](https://stackoverflow.com/questions/245062/whats-the-difference-between-javascript-and-java#:~:text=Java%20is%20class%2Dbased%3B%20JavaScript,constructors%22%20are%20just%20standard%20functions.). Unlike the previous smart question which provides a context to the situation where it seemed ubnderstandable that they would not be able to find an answer elsewhere, this question had broad contexts that allowed for more general interepretation of the question. There is no added context in the prompt, just this single question that seems broad, "What is teh difference between java and javascript?". This question and post isn't so smart as the user would be able to find the diffrences of java and javascript in other sources before making this post, which would allow a more specialized smart question to be made at the time, such as "why is the syntax for creating variables in javascript is so different compared to java?" Having a general answer would also be detrimental to learning more about the said question, as details would be omitted to give a more convenient explanation for the solver to answer the broad topic.
+
+
+This is the C++ code the user provides in the post that allows the sorted array to be processed faster
+```cpp
+for (unsigned i = 0; i < 100000; ++i)
+    {
+        for (unsigned c = 0; c < arraySize; ++c)
+        {   // Primary loop.
+            if (data[c] >= 128)
+                sum += data[c];
+        }
+    }
+```
 
 ## Overall Need For Software Engineeers And Smart Questions
 
