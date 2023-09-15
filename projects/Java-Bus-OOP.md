@@ -25,7 +25,7 @@ the bus. There are also integers to represent the bus's capacity and how many ar
 add students to the bus, remove students from the bus by name, and display all the students information. The bus can't be over max occupancy otherwise the add 
 student function will not add more students to teh predeclared array in the bus.
 
-The last file, the driver file, basically jsut asks for user input in a text based UI hosted on the command line to access the diffrent functions of the bus file 
+The last file, the driver file, basically just asks for user input in a text based UI hosted on the command line to access the diffrent functions of the bus file 
 and display how each function operates. The user can repeatedly acces commands from the driver until entering a 0 as a response. After succesful completion, the 
 driver file will signify the end of the intereaction with a thank you message.
 
