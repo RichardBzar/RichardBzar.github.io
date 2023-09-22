@@ -12,7 +12,7 @@ labels:
   - Programming
 summary: "Webpage of Hongzhi Emperor's (Ming Dynasty China) life overview"
 ---
-<img width="440px" height="320px" src="../img/Untitled.png" class="img-thumbnail" >
+<img width="440px" height="320px" src="../img/projectimg/screenshot_hongzhi.png" class="img-thumbnail" >
 
 ## Beginning
 
