@@ -5,7 +5,7 @@ image: img/projectimg/hong2.png
 title: "Hongzhi Emperor Overview Webpage"
 # All dates must be YYYY-MM-DD format!
 date: 2023-09-20
-published: false
+published: true
 labels:
   - HTML
   - CSS
