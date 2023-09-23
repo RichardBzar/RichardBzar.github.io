@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/download (1).png
+image: img/projectimg/hong.png
 title: "Hongzhi Emperor Overview Webpage"
 # All dates must be YYYY-MM-DD format!
 date: 2023-09-20
