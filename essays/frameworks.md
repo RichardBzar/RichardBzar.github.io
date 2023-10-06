@@ -10,7 +10,7 @@ labels:
   - HTML/CSS
 summary: "An essay to describe my opinions nad experience in HTML/CSS frameworks like bootstrap, etc."
 ---
-<img width="300px" height="150px" src="../img/download.png" class="img-thumbnail" >
+<img width="360px" height="250px" src="../img/essay-img/bstrap.png" class="img-thumbnail" >
 
 ## Framework makes the Dreamworks.....website
 
