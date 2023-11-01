@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Final Project Idea"
+title: "Final Project Idea-2"
 date: 2023-10-30
 published: true
 labels:
