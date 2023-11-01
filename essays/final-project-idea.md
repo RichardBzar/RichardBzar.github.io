@@ -37,5 +37,5 @@ The user would first appear on the landing page, where they would proceed to eit
 
 ## Beyond the basics
 - Private messaging the author of the post through direct messaging
-- Having an anonymous option to post, direct message other to other people
+- Having an anonymous option to post, direct message other students
 - A rating system similar to reddit where we can view the positive opinions of posts, or a report function to report posts to admins to take down if inappropriate
