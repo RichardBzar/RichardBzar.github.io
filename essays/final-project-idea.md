@@ -8,7 +8,7 @@ labels:
   - Meteor
 ---
 ## Overview
-Problem: Students in college tend to want to have some advice from their predecessors but usually there is no central forumn to check
+Problem: Students in college tend to desire to have some advice from their predecessors but usually there is no central forumn to check for notes/studying resources pertaining to the class/subject that the student is struggled with, usually people have to make do with finding alumnis of the class by luck
 
 ## Mockup page ideas
 
