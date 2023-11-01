@@ -13,7 +13,7 @@ labels:
 Josiah Kila, Kelly Sato, Lauren Clayton, Richard Baltazar
 
 ## Overview
-Problem: Students in college tend to desire to have some advice from their predecessors but usually there is no central forumn to check for notes/studying resources pertaining to the class/subject that the student is struggled with, usually people have to make do with finding alumnis of the class by luck
+Problem: Students in college tend to desire to have some advice from their predecessors but usually there is no central forum to check for notes/studying resources pertaining to the class/subject that the student is struggling with, usually people have to make do with finding alumnis of the class by luck
 
 Solution: Our solution is the Peer To Peer Study Material Exchange Site which is an application designed for UH Manoa students to solve the absence of a centralized hub to post study material content for courses by allowing their fellow students to gather insight from their experiences that they can post on the site
 
