@@ -33,7 +33,7 @@ Possible pages would include,
     - This page will allow logged in users to post through a form
 
 ## Use case ideas
-The user would first appear on the landing page, where they would proceed to either sign in/ sign up on the sign in page with their personal infornation, Where they can go to the profile page to optionally double check the information is right. Finally they can browse for the posty of the subject they desire through the browse page, save it if they want to and view it on their saved posts page any time.
+The user would first appear on the landing page, where they would proceed to either sign in/ sign up on the sign in page with their personal infornation, Where they can go to the profile page to optionally double check the information is right. Finally they can either add a post themselves, or browse for the post of the subject they desire through the browse page, save it if they want to and view it on their saved posts page any time.
 
 ## Beyond the basics
 - Private messaging the author of the post through direct messaging
