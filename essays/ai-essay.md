@@ -35,4 +35,12 @@ AI, specifically chatgpt had been anintegral tool for using when completing task
 
   ## Impact on Learning and Understanding
 
-  
+AI had a great influence in my learning during the course. It helped me solve minor to difficult problems such as syntax, and giving the right piece of code for teh goals I want to accompish. Chatgpt allowed me to gain more skills by easing me into the assignments through explaining the answers it gicves. It also allows my problem solving abilities to develop by giving examples to probems I could utilize in similar situations, such as how to correctly format a navbar with flex dislpay.
+
+## Practical Applications
+
+AI had been used for other applications by me such as generating a personality for a character in creative writing, or the resources needed for specific prograams I use such as unity and unreal.
+
+## Challenges and Opportunities
+
+A challenge I found when using AI is the limitation to recent developments, chatgpt for example when it launched only had access to data up to 2021
