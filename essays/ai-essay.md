@@ -10,6 +10,8 @@ labels:
   - ChatGPT
 summary: "An essay abut the use of ai in modern lifestyle and how it affected my college experience"
 ---
+<img src="https://www.engineersgarage.com/wp-content/uploads/2021/11/TCH36-01-scaled.jpg" width="300px" height="300px" />
+
 ## Introduction
 
 AI recently has been a prevalent topic for digital assistance in education, specifically the machine learning tools such as chatgt and github copilot. Usually in universities, we see the disapproving sentiments of professors when students use these tools, however in computer science, chatgpt and other AI, can really benefit a student both in and out of education. ChatGPT may be a way for a student to get answers that don't require critical thinking for some tasks, but it is when an objective requires much of menial tasks that chatgpt shines as a tool to manifest another increase of efficiancy.
@@ -43,4 +45,17 @@ AI had been used for other applications by me such as generating a personality f
 
 ## Challenges and Opportunities
 
-A challenge I found when using AI is the limitation to recent developments, chatgpt for example when it launched only had access to data up to 2021
+A challenge I found when using AI is the limitation to recent developments for data, chatgpt for example when it launched only had access to data up to 2021 so for recent applications or updates to apllications, it would be impossible to get answers from chatgpt. I feel that chatgpt and other AI will be able to give more positives for educations with newer features being added. Creating programs in less time would allow for more material to be covered in the ICS 314 course.
+
+## Comparative Analysis
+
+Learning with AI compared to traditional teaching allows for both positives and negatives. One such pro is the availiblility of AI from any location, you are able to access ai frequently in any period of the day with a stable internet connection, but compared to AI, traditional teacching is limited by the professor/teacher being a person that has other responsibilities and dedications other than class, so it would be impossible to be ready to solve your problems all the time. A con however is the decline of person to person communication in most cases would allow a person to comprehend the material and or ask questions that ai may not understand or be able to solve.
+
+## Future Considerations
+
+AI will only get better as time goes on. With the development of newer features such as image queries with ai, software engineering will become more accesible for other students. In a field that is the fastest growing sector of society, AI is a tool needed to train more students.
+
+## Conclusion
+
+AI is a tool that is essewntial for the future of computer science, it helped me by dewbuggin my code ininstances where I was unable to find the problem, it made the repetitive simple code that would take a long time to make otherwise, adn it allowed a way to have examples be given through promping the ai with a problem.
+I think that Ai is integrated greatly for the current features it has in this course.
