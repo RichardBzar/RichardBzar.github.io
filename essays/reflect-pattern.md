@@ -13,4 +13,4 @@ summary: "An essay abut the use of ai in modern lifestyle and how it affected my
 <img src="https://www.engineersgarage.com/wp-content/uploads/2021/11/TCH36-01-scaled.jpg" width="300px" height="300px" />
 
 ## Introduction
-  Design patterns are a set of rules or guidelines that you loosely follow whether it be conciously or unconciously.
+  Design patterns are a set of rules or guidelines that you loosely follow whether it be conciously or unconciously. In art this could manifest in the form of a uniform artstyle you produced, while in writing this could be shown with a concurrent theme or motif that coccurs throughout a plot. Desing patterns are important points that differentiate your works from the general populations.
