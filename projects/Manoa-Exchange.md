@@ -7,48 +7,122 @@ title: "Manoe Exchange Final Project Website"
 date: 2023-12-12
 published: false
 labels:
-  - HTML
-  - Programming
-summary: "A websight I designed with four other teammates for my finals in ICS 314 that solves the problem of students seeking insight into foreign exchange experiences of fellow students"
+  - HTML/CSS
+  - Web Development
+  - Meteor
+summary: "A website I designed with four other teammates as a final project for ICS 314 that solves the problem of students seeking insight into foreign exchange experiences of fellow students"
 ---
 <img width="440px" height="320px" src="../img/Untitled.png" class="img-thumbnail" >
 
-After taking my first programming class, I wanted to learn HTML, and this website was my first experience creating a basic webpage utilizing HTML 5. The website 
-uses header and p tags for text, has hyperliks embedded into text, images displayed for visual representations, and radio buttons that takes your choice as input. 
-The website is composed of three sections that are divided with div tags. Each section has a single picture of the animation for the style the section mainly
-focuses on. It also contains a prompt composed of a label, radio buttons, and regular buttons asking if you enjoyed this specific style of animation in your own 
-life. I arranged my list for each style to be under the pictures of each section in an ordered list. 
+## Introduction
+  Throughout the software engineering 1 course, i gained new skills in html/css and meteor that allowed me to gain more understanding of web development, which in turn allowed me to assist my team in creating the website we elected to make for our final project. Our website "manoa exchange" is a website that seeked to solve the problem that UH Manoa students faced, which is the lack of information to foreign exchange experiences of peers and how to access them.
 
-For each lsit, three of my favorite animations are listed alongside my personal interepretation of how these shows/films were portrayed as. The ordered list is 
-positioned just below the pictures and titles of the section uniformly. Each pictures are adjusted with their height and width to a bigger scale than they're 
-intial values in order to match the length of the ordered lists. This project utilizes the basic functions of HTML to facilitate a visual representation of 
-my list of favorite animations and design a layout to show the subjects with optional user interaction in the radio buttons. 
+## Backend
+  The portion of the project I had been responsible for was mainly working on the myprofile page, and the backend to the website along with another teammate. Our team distributed tasks among the five of us which adhered to our preferences, or availiblity.
 
-The main section of the website is also separated from the footer section with a hr tag to differentiate the body content from the final activity of entereing text 
-in a text area input. The final input, the text area has a default shadow value included to show what type of answer is meant to be placed inside the box. A submit
-button is positioned next to the text area to act as a signifier of completion.
+This is the code for the prfile page of the website:
 
-This is the code for the Chinese animation section of the website's html:
+```jsx
+import React from 'react';
+import { Meteor } from 'meteor/meteor';
+import { Link } from 'react-router-dom';
+import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { useTracker } from 'meteor/react-meteor-data';
+import LoadingSpinner from '../components/LoadingSpinner';
+import { Profiles } from '../../api/profile/Profile';
+import { Posts } from '../../api/post/Post';
+import { Comments } from '../../api/comment/Comment';
+import PostItem from '../components/PostItem';
+import '../css/PostItem.css';
+import { PageIDs } from '../utilities/ids';
+import NavBar from '../components/NavBar';
 
-```cpp
-<div>
-  <h1>Chinese Animations/Donghua</h1>
-  <img src="https://image.tmdb.org/t/p/original/b094W0EBx8zVXCzMpKabwVm3OSP.jpg" alt="Picture of Chinese animation Shaonian Gexing">
-  <h2>List of favorite chinese animations</h2>
-  <ol>
-    <li>Shaonian Gexing</li><p> - A chinese animation that exhibits the wuxia martial hero genre popularized in china</p>
-    <li>Fox spirit matchmaker</li><p> - A chinese animation that uses 2d animation, differing from the traditional 3d animation to tell a chronoglogy of romance stories</p>
-    <li>The kings avatar</li><p> - </p>
-  </ol>
-  <legend><b>Are you a fan of Chinese dongua too?</b></legend>
-  <label>
-  <input type="radio">Yes
-  </label>
-  <label>
-  <input type="radio">No
-  </label>
-  <hr>
-  <button>Submit</button>
-</div>
+const MyProfile = () => {
+  const { ready, posts, comments, profiles } = useTracker(() => {
+    const subscription = Meteor.subscribe(Profiles.userPublicationName);
+    const subscription2 = Meteor.subscribe(Posts.userPublicationName);
+    const subscription3 = Meteor.subscribe(Comments.userPublicationName);
+
+    const rdy = subscription.ready() && subscription2.ready() && subscription3.ready();
+
+    const profileData = Profiles.collection.find({}).fetch();
+    const postData = Posts.collection.find({}, { sort: { createdAt: -1 } }).fetch();
+    const commentData = Comments.collection.find({}).fetch();
+
+    return {
+      profiles: profileData,
+      posts: postData,
+      comments: commentData,
+      ready: rdy,
+    };
+  }, []);
+
+  const userProfile = profiles.find(profile => profile.owner === Meteor.user().username);
+
+  return ready ? (
+    <div id={PageIDs.myProfilePage}>
+      <NavBar />
+      <Container className="mb-4">
+        <Row className="mt-4">
+          <Col lg={4}>
+            <Card className="mb-4 rounded border border-dark card_profile antw">
+              <Card.Body className="text-center">
+                <div className="d-flex justify-content-center mb-4">
+                  <img
+                    src={userProfile?.profilePicture || 'default-avatar-url'}
+                    alt="avatar"
+                    className="rounded-circle border border-dark"
+                    style={{ width: '150px', height: '150px' }}
+                  />
+                </div>
+                <Link to="/uploadWidget"><Button className="custom-update-button">Add/Edit Profile Picture</Button></Link>
+                <h3 className="mb-1 mt-3">{userProfile?.firstName || 'Insert Name'} {userProfile?.lastName || 'Insert Name'}</h3>
+                <p className="text-muted mb-4">{userProfile?.idNumber}</p>
+              </Card.Body>
+            </Card>
+            <Card className="mb-4 mt-4 border border-dark antw">
+              <Card.Body>
+                <Row className="mb-2">
+                  <Col sm="3">
+                    <Card.Text>Name</Card.Text>
+                  </Col>
+                  <Col sm="9">
+                    <Card.Text className="text-muted">{userProfile?.firstName || 'Insert Name'} {userProfile?.lastName || 'Insert Name'}</Card.Text>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col sm="3">
+                    <Card.Text>E-mail</Card.Text>
+                  </Col>
+                  <Col sm="9">
+                    <Card.Text className="text-muted">{userProfile?.owner || 'Insert Name'} </Card.Text>
+                  </Col>
+                </Row>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={8}>
+            <Card className="mb-4 border border-black antw">
+              <Card.Header as="h3" className="text-center">Recent Posts</Card.Header>
+            </Card>
+            {posts.map((post) => {
+              const relatedComments = comments.filter(comment => comment.uniqueId === post._id);
+              return (
+                <Col md={12} key={post._id} className="mb-4">
+                  <PostItem
+                    post={post}
+                    comments={relatedComments || []}
+                  />
+                </Col>
+              );
+            })}
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  ) : <LoadingSpinner />;
+};
+
+export default MyProfile;
 ```
 <img width="540px" height="440px" src="../img/Favorite Animations - Google Chrome 9_1_2023 11_01_46 PM (2).png" class="img-thumbnail" >
