@@ -4,7 +4,7 @@ type: project
 image: img/download (1).png
 title: "Manoe Exchange Final Project Website"
 # All dates must be YYYY-MM-DD format!
-date: 2023-12-12
+date: 2023-12-13
 published: false
 labels:
   - HTML/CSS
@@ -18,9 +18,11 @@ summary: "A website I designed with four other teammates as a final project for 
   Throughout the software engineering 1 course, i gained new skills in html/css and meteor that allowed me to gain more understanding of web development, which in turn allowed me to assist my team in creating the website we elected to make for our final project. Our website "manoa exchange" is a website that seeked to solve the problem that UH Manoa students faced, which is the lack of information to foreign exchange experiences of peers and how to access them.
 
 ## Backend
-  The portion of the project I had been responsible for was mainly working on the myprofile page, and the backend to the website along with another teammate. Our team distributed tasks among the five of us which adhered to our preferences, or availiblity.
+  The portion of the project I had been responsible for was mainly working on the my profile page, and the backend to the website along with another teammate. Our team distributed tasks among the five of us which adhered to our preferences, or availiblity of the task. Our website had a key focus of allowing users/students to create profiles that contain basic information such as school email id and name, and allow them to post information of their hopes or experiences in foreign exchange programs in a way similar to social media apps like twitter and websites like reddit.
 
-This is the code for the prfile page of the website:
+  
+
+This is the code for the profile page of the website:
 
 ```jsx
 import React from 'react';
