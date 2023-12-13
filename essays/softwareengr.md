@@ -12,4 +12,8 @@ labels:
   - Meteor
 summary: "A reflective essay discussing the topics I've learned in the ICS 314 course, and how would they be applicable towards other non-web development applications"
 ---
-## Overview
+## Functional Programming
+
+  Functional programming is a style of programming that utilizes the versatility of the javascript 
+
+## User Interface Frameworks
