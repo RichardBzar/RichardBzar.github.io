@@ -10,8 +10,9 @@ labels:
   - Javascript
   - HTML/CSS
   - Meteor
-summary: "A reflective essay discussing the topics I've learned in the ICS 314 course, and how would they be applicable towards other non-web development applications"
+summary: "A brief reflective essay discussing the topics I've learned in the ICS 314 course, and how would they be applicable towards other non-web development applications"
 ---
+
 
   ICS 314 taught me many topics that I found useful and essential, however two specific modules within the curriculum became a highlight for my development in programming, "Functional Programming", and "User Interface Frameworks". These two topics were the topics that I felt were important to improving my understanding of coding and improvements I could develop with my current understanding. 
 
@@ -27,4 +28,4 @@ summary: "A reflective essay discussing the topics I've learned in the ICS 314 c
 
 ## Conclusion
 
-  Overall Functional Programming, and User Interface Frameworks were two of the most useful and important topics I've learned in this course. They brought me convenience that can also be applicable in other instances of my lifestyle.
+  Overall Functional Programming, and User Interface Frameworks were two of the most useful and important topics I've learned in this course. They brought me convenience that can also be applicable in other instances of my lifestyle such as game development or app development. These tools make programming more understandable and create a more favorable toolset I can use for future projects.
