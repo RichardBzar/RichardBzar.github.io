@@ -12,7 +12,13 @@ labels:
   - Meteor
 summary: "A website I designed with four other teammates as a final project for ICS 314 that solves the problem of students seeking insight into foreign exchange experiences of fellow students"
 ---
-<img width="440px" height="320px" src="../img/Untitled.png" class="img-thumbnail" >
+<p align="center">
+  <img width="620px" height="320px" src="../img/Manoaexchange-home.png">
+</p>
+
+<p align="center">
+  <img width="620px" height="320px" src="../img/manoaexchange.com_filter_China.png">
+</p>
 
 ## Introduction
   Throughout the software engineering 1 course, i gained new skills in html/css and meteor that allowed me to gain more understanding of web development, which in turn allowed me to assist my team in creating the website we elected to make for our final project. Our website "manoa exchange" is a website that seeked to solve the problem that UH Manoa students faced, which is the lack of information to foreign exchange experiences of peers and how to access them.
@@ -20,7 +26,11 @@ summary: "A website I designed with four other teammates as a final project for 
 ## Backend
   The portion of the project I had been responsible for was mainly working on the my profile page, and the backend to the website along with another teammate. Our team distributed tasks among the five of us which adhered to our preferences, or availiblity of the task. Our website had a key focus of allowing users/students to create profiles that contain basic information such as school email id and name, and allow them to post information of their hopes or experiences in foreign exchange programs in a way similar to social media apps like twitter and websites like reddit.
 
-  The mypfrofile page was made with a simplistic design where the left portion of the page contained a column composed of 2 react bootstrap card components that contained the user's profile picture, full name, student id number, and email, while the right portion rendered all of the posts the student made in the website. When bulding theb webpage, I managed to learn how to utilize react bootstrap classes better and more efficiently, with the card and grid classes being the most prevalent react 
+  The mypfrofile page was made with a simplistic design where the left portion of the page contained a column composed of 2 react bootstrap card components that contained the user's profile picture, full name, student id number, and email, while the right portion rendered all of the posts the student made in the website. When bulding theb webpage, I managed to learn how to utilize react bootstrap classes better and more efficiently, with the card and grid classes being the most prevalent react components I used in this portion.
+
+<p align="center">
+  <img width="620px" height="320px" src="../img/manoaexchange.com_filter_China (1).png">
+</p>
 
 This is the code for the profile page of the website:
 
