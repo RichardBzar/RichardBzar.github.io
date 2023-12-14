@@ -32,6 +32,8 @@ summary: "A website I designed with four other teammates as a final project for 
   <img width="620px" height="320px" src="../img/manoaexchange.com_filter_China (1).png">
 </p>
 
+Other than the profile page, I worked on the backend for a portion of the post, and the home page. The tags for the post items were implemented through multiple collections and subscriptions to relay information to the posts and home pages. I added the tags collection to contain a dataset of all countries a post could be affiliated with.
+
 This is the code for the profile page of the website:
 
 ```jsx
