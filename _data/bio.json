@@ -15,10 +15,10 @@
   },
   "interests": [
     { "name": "Game Development" },
-    { "name": "Chinese Webnovels" },
     { "name": "Cloud Computing" },
     { "name": "VR/AR Development" },
-    { "name": "Web/Mobile App Development" }
+    { "name": "Chinese Webnovels" },
+    { "name": "Web/Mobile App Development"}
   ],
   "skills": [
     {
@@ -49,7 +49,12 @@
       "area": "Comptia A+ 1101-1102",
       "studyType": "Computer Troubleshooting",
       "startDate": "2022",
-      "endDate": "2025"
+      "endDate": "2025",
+      "courses": [
+        "Troubleshooting",
+        "Critical Thinking",
+        "Modern technology Comprehension"
+      ]
     }
   ],
   "volunteer": [
