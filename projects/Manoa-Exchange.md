@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/download (1).png
+image: img/ManoaExchangeLogo.png
 title: "Manoe Exchange Final Project Website"
 # All dates must be YYYY-MM-DD format!
 date: 2023-12-13
@@ -10,6 +10,7 @@ labels:
   - HTML/CSS
   - Web Development
   - Meteor
+  - Domain/Servers
 summary: "A website I designed with four other teammates as a final project for ICS 314 that solves the problem of students seeking insight into foreign exchange experiences of fellow students"
 ---
 <p align="center">
@@ -31,13 +32,13 @@ summary: "A website I designed with four other teammates as a final project for 
 
 Other than the profile page, I worked on the backend for a portion of the post, and the home page. The tags for the post items were implemented through multiple mongodb collections and subscriptions to relay information to the posts and home pages. I added the tags collection to contain a dataset of all countries a post could be affiliated with. The tags collection is loaded on server startup with 20 countries that offer foreign exchange programs within UH, and the collection is then used to display the tags within the home page and create post page.
 
-On the create post page, I placed a select element portion into the form to gathre user data for teh country affiliated with the post they would like to make towards the site.
+On the create post page, I placed a select element into the form to gather user data for the country affiliated with the post they would like to make towards the site. The options to select were generated from the tags collection that was made on server startup. After the user clicks the submit button, the post is created, ans stored ina posts collection, while another collection called posttags recieves teh input of the posts unique id and the selected country tag, recieving an element with both pieces of information acting as a link for the tag and post.
 
 <p align="center">
   <img width="620px" height="320px" src="../img/manoaexchange.com_filter_China.png">
 </p>
 
-The home page utilizes the tags to populate a carousel that my teammate designed with the possible countries that can be the tags of posts. In the home page, I designed the tags to be displayed as buttons that can be clicked to filter through posts by the tags the posts are affiliated with. Every tag is clickable and redirects the user to a page where only posts with the chosen tags are renderd to the page.
+The home page utilizes the tags to populate a carousel that my teammate designed with the possible countries that can be the tags of posts. In the home page, I designed the tags to be displayed as buttons that can be clicked to filter through posts by the tags the posts are affiliated with. Every tag is clickable and redirects the user to a page where only posts with the chosen tags are rendered to the page. I learned how to redirect users to a page related to the element they clicked with the link components that take input from the button to redirect users to a url with the input information mutating the output url.
 
 This is the code for the profile page of the website:
 
