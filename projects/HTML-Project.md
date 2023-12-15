@@ -5,7 +5,7 @@ image: img/download (1).png
 title: "Favorite Animation Website Personal Project"
 # All dates must be YYYY-MM-DD format!
 date: 2020-07-12
-published: true
+published: false
 labels:
   - HTML
   - Programming
