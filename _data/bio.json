@@ -23,11 +23,11 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "HTML", "CSS" ]
+      "keywords": [ "C", "C++", "Java", "Javascript", "HTML", "CSS", "React Bootstrap" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Windows", "Git/GitHub"]
+      "keywords": [ "MacOS", "Windows", "Git/GitHub", "Meteor" ]
     }
   ],
   "education": [
@@ -41,7 +41,7 @@
         "ICS 311 Algorithms",
         "MATH 242 Calculus 2",
         "ICS 314: Softwaer Engineering",
-        I"ICS 211: Intro to Computer Science II"
+        "ICS 211: Intro to Computer Science II"
       ]
     },
     {
