@@ -41,7 +41,8 @@
         "ICS 311 Algorithms",
         "MATH 242 Calculus 2",
         "ICS 314: Softwaer Engineering",
-        "ICS 211: Intro to Computer Science II"
+        "ICS 211: Intro to Computer Science II",
+        "ICS 321: Database Systems"
       ]
     },
     {
@@ -64,7 +65,7 @@
       "startDate": "2019-01-25",
       "endDate": "2019-03-11",
       "highlights": [
-        "Collaborate with a group of volunteers to perform sanitation tasks along the HCC campus ragning from teh library to the cafeteria"
+        "Collaborate with a group of volunteers to perform sanitation tasks along the HCC campus ranging from the library to the cafeteria"
       ]
     }
   ],
