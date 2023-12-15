@@ -4,7 +4,7 @@ type: essay
 title: "The essentials of ICS 314: Software Engineering"
 # All dates must be YYYY-MM-DD format!
 date: 2023-12-13
-published: false
+published: true
 labels:
   - Software Engineering
   - Javascript
@@ -24,7 +24,7 @@ summary: "A brief reflective essay discussing the topics I've learned in the ICS
 
 ## User Interface Frameworks
 
-  Before learning from the ICS 314 course, my previous experience with html/css had been just the basic tags/elements you would learn from vanilla html/css. I had learned that the positioning of components such as navbars had to be made with many complex lines of codes that include custom spacing, and font attributes. After learning User Interface Frameworks, such as react bootstrap I found that this lead to a more easier time for development because of the convenience it brought me. React Bootstrap allowed all the code that would be used to develop a common component in a webpage/app be made into a standard predefined component that you could import and use for your code. This made development easier with all the unnecessry repetitive code removed in favor of a standard import from the react bootstrap library.
+  Before learning from the ICS 314 course, my previous experience with html/css had been just the basic tags/elements you would learn from vanilla html/css. I had learned that the positioning of components such as navbars had to be made with many complex lines of codes that include custom spacing, and font attributes. After learning User Interface Frameworks, such as react bootstrap I found that this lead to a more easier time for development because of the convenience it brought me. React Bootstrap allowed all the code that would be used to develop a common component in a webpage/app be made into a standard predefined component that you could import and use for your code. This made development easier with all the unnecessry repetitive code removed in favor of a standard import from the react bootstrap library. In my assignments/projects, react bootstrap minimalized the amount of code needed to make almost all of the aspects in my webpages. I feel that this same effect would definetly workout if they are used for user interface applications in other fields that don't involve web development.
 
 ## Conclusion
 
