@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Manoe Exchange Final Project Website | Richard Baltazar | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/richardbzar.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Richard Baltazar | Professional Portfolio">
+    <meta property="og:url" content="https://RichardBzar.github.io/projects/Manoa-Exchange.html">
+    <meta property="og:title" content="Manoe Exchange Final Project Website | Richard Baltazar | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/richardbzar.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Manoe Exchange Final Project Website | Richard Baltazar | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Richard Baltazar</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Manoe Exchange Final Project Website</h1>
+ <p align="center">
+  <img width="620px" height="320px" src="../img/Manoaexchange-home.png" />
+</p>
+
+<h2 id="introduction">Introduction</h2>
+<p>Throughout the ICS 314 software engineering course, I gained new skills in html/css and meteor that allowed me to gain more understanding of web development, which in turn allowed me to assist my team in creating the website we elected to make for our final project. Our website “manoa exchange” is a website that seeked to solve the problem that UH Manoa students faced, which is the lack of information to foreign exchange experiences of peers and how to access them. Our website is designed to allow users to post a card of information into the site that contains a picture usually of the person’s experience in a country, a tag that labes which country it was, and text that describes the experience. Our primary goal for this site was to make a slim down restricted version of a reddit thread to foreign exchange students or hopefuls of UH manoa.</p>
+
+<h2 id="backend">Backend</h2>
+<p>The portion of the project I had been responsible for was mainly working on the my profile page, and the backend to the website along with another teammate. Our team distributed tasks among the five of us which adhered to our preferences, or availiblity of the task. Our website had a key focus of allowing users/students to create profiles that contain basic information such as school email id and name, and allow them to post information of their hopes or experiences in foreign exchange programs in a way similar to social media apps like twitter and websites like reddit.</p>
+
+<h3 id="profile-page">Profile Page</h3>
+<p>The profile page was made with a simplistic design where the left portion of the page contained a column composed of 2 react bootstrap card components that contained the user’s profile picture, full name, student id number, and email, while the right portion rendered all of the posts the student made in the website. When bulding theb webpage, I managed to learn how to utilize react bootstrap classes better and more efficiently, with the card and grid classes being the most prevalent react components I used in this portion.</p>
+
+<p align="center">
+  <img width="620px" height="320px" src="../img/manoaexchange.com_filter_China (1).png" />
+</p>
+
+<p>This is the code for the profile page of the website:</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Meteor</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">meteor/meteor</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Link</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-router-dom</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Button</span><span class="p">,</span> <span class="nx">Card</span><span class="p">,</span> <span class="nx">Col</span><span class="p">,</span> <span class="nx">Container</span><span class="p">,</span> <span class="nx">Row</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-bootstrap</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">useTracker</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">meteor/react-meteor-data</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">LoadingSpinner</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../components/LoadingSpinner</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Profiles</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../../api/profile/Profile</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Posts</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../../api/post/Post</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Comments</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../../api/comment/Comment</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">PostItem</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../components/PostItem</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="dl">'</span><span class="s1">../css/PostItem.css</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">PageIDs</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../utilities/ids</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">NavBar</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../components/NavBar</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">MyProfile</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">{</span> <span class="nx">ready</span><span class="p">,</span> <span class="nx">posts</span><span class="p">,</span> <span class="nx">comments</span><span class="p">,</span> <span class="nx">profiles</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">useTracker</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">subscription</span> <span class="o">=</span> <span class="nx">Meteor</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">Profiles</span><span class="p">.</span><span class="nx">userPublicationName</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">subscription2</span> <span class="o">=</span> <span class="nx">Meteor</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">Posts</span><span class="p">.</span><span class="nx">userPublicationName</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">subscription3</span> <span class="o">=</span> <span class="nx">Meteor</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">Comments</span><span class="p">.</span><span class="nx">userPublicationName</span><span class="p">);</span>
+
+    <span class="kd">const</span> <span class="nx">rdy</span> <span class="o">=</span> <span class="nx">subscription</span><span class="p">.</span><span class="nx">ready</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="nx">subscription2</span><span class="p">.</span><span class="nx">ready</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="nx">subscription3</span><span class="p">.</span><span class="nx">ready</span><span class="p">();</span>
+
+    <span class="kd">const</span> <span class="nx">profileData</span> <span class="o">=</span> <span class="nx">Profiles</span><span class="p">.</span><span class="nx">collection</span><span class="p">.</span><span class="nx">find</span><span class="p">({}).</span><span class="nx">fetch</span><span class="p">();</span>
+    <span class="kd">const</span> <span class="nx">postData</span> <span class="o">=</span> <span class="nx">Posts</span><span class="p">.</span><span class="nx">collection</span><span class="p">.</span><span class="nx">find</span><span class="p">({},</span> <span class="p">{</span> <span class="na">sort</span><span class="p">:</span> <span class="p">{</span> <span class="na">createdAt</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">}</span> <span class="p">}).</span><span class="nx">fetch</span><span class="p">();</span>
+    <span class="kd">const</span> <span class="nx">commentData</span> <span class="o">=</span> <span class="nx">Comments</span><span class="p">.</span><span class="nx">collection</span><span class="p">.</span><span class="nx">find</span><span class="p">({}).</span><span class="nx">fetch</span><span class="p">();</span>
+
+    <span class="k">return</span> <span class="p">{</span>
+      <span class="na">profiles</span><span class="p">:</span> <span class="nx">profileData</span><span class="p">,</span>
+      <span class="na">posts</span><span class="p">:</span> <span class="nx">postData</span><span class="p">,</span>
+      <span class="na">comments</span><span class="p">:</span> <span class="nx">commentData</span><span class="p">,</span>
+      <span class="na">ready</span><span class="p">:</span> <span class="nx">rdy</span><span class="p">,</span>
+    <span class="p">};</span>
+  <span class="p">},</span> <span class="p">[]);</span>
+
+  <span class="kd">const</span> <span class="nx">userProfile</span> <span class="o">=</span> <span class="nx">profiles</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">profile</span> <span class="o">=&gt;</span> <span class="nx">profile</span><span class="p">.</span><span class="nx">owner</span> <span class="o">===</span> <span class="nx">Meteor</span><span class="p">.</span><span class="nx">user</span><span class="p">().</span><span class="nx">username</span><span class="p">);</span>
+
+  <span class="k">return</span> <span class="nx">ready</span> <span class="p">?</span> <span class="p">(</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="p">=</span><span class="si">{</span><span class="nx">PageIDs</span><span class="p">.</span><span class="nx">myProfilePage</span><span class="si">}</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nc">NavBar</span> <span class="p">/&gt;</span>
+      <span class="p">&lt;</span><span class="nc">Container</span> <span class="na">className</span><span class="p">=</span><span class="s">"mb-4"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nc">Row</span> <span class="na">className</span><span class="p">=</span><span class="s">"mt-4"</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nc">Col</span> <span class="na">lg</span><span class="p">=</span><span class="si">{</span><span class="mi">4</span><span class="si">}</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nc">Card</span> <span class="na">className</span><span class="p">=</span><span class="s">"mb-4 rounded border border-dark card_profile antw"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Body</span> <span class="na">className</span><span class="p">=</span><span class="s">"text-center"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="p">=</span><span class="s">"d-flex justify-content-center mb-4"</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">img</span>
+                    <span class="na">src</span><span class="p">=</span><span class="si">{</span><span class="nx">userProfile</span><span class="p">?.</span><span class="nx">profilePicture</span> <span class="o">||</span> <span class="dl">'</span><span class="s1">default-avatar-url</span><span class="dl">'</span><span class="si">}</span>
+                    <span class="na">alt</span><span class="p">=</span><span class="s">"avatar"</span>
+                    <span class="na">className</span><span class="p">=</span><span class="s">"rounded-circle border border-dark"</span>
+                    <span class="na">style</span><span class="p">=</span>
+                  <span class="p">/&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nc">Link</span> <span class="na">to</span><span class="p">=</span><span class="s">"/uploadWidget"</span><span class="p">&gt;&lt;</span><span class="nc">Button</span> <span class="na">className</span><span class="p">=</span><span class="s">"custom-update-button"</span><span class="p">&gt;</span>Add/Edit Profile Picture<span class="p">&lt;/</span><span class="nc">Button</span><span class="p">&gt;&lt;/</span><span class="nc">Link</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">className</span><span class="p">=</span><span class="s">"mb-1 mt-3"</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">userProfile</span><span class="p">?.</span><span class="nx">firstName</span> <span class="o">||</span> <span class="dl">'</span><span class="s1">Insert Name</span><span class="dl">'</span><span class="si">}</span> <span class="si">{</span><span class="nx">userProfile</span><span class="p">?.</span><span class="nx">lastName</span> <span class="o">||</span> <span class="dl">'</span><span class="s1">Insert Name</span><span class="dl">'</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span> <span class="na">className</span><span class="p">=</span><span class="s">"text-muted mb-4"</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">userProfile</span><span class="p">?.</span><span class="nx">idNumber</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Body</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nc">Card</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nc">Card</span> <span class="na">className</span><span class="p">=</span><span class="s">"mb-4 mt-4 border border-dark antw"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Body</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nc">Row</span> <span class="na">className</span><span class="p">=</span><span class="s">"mb-2"</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nc">Col</span> <span class="na">sm</span><span class="p">=</span><span class="s">"3"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Text</span><span class="p">&gt;</span>Name<span class="p">&lt;/</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Text</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nc">Col</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nc">Col</span> <span class="na">sm</span><span class="p">=</span><span class="s">"9"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Text</span> <span class="na">className</span><span class="p">=</span><span class="s">"text-muted"</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">userProfile</span><span class="p">?.</span><span class="nx">firstName</span> <span class="o">||</span> <span class="dl">'</span><span class="s1">Insert Name</span><span class="dl">'</span><span class="si">}</span> <span class="si">{</span><span class="nx">userProfile</span><span class="p">?.</span><span class="nx">lastName</span> <span class="o">||</span> <span class="dl">'</span><span class="s1">Insert Name</span><span class="dl">'</span><span class="si">}</span><span class="p">&lt;/</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Text</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nc">Col</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nc">Row</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nc">Row</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nc">Col</span> <span class="na">sm</span><span class="p">=</span><span class="s">"3"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Text</span><span class="p">&gt;</span>E-mail<span class="p">&lt;/</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Text</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nc">Col</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nc">Col</span> <span class="na">sm</span><span class="p">=</span><span class="s">"9"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Text</span> <span class="na">className</span><span class="p">=</span><span class="s">"text-muted"</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">userProfile</span><span class="p">?.</span><span class="nx">owner</span> <span class="o">||</span> <span class="dl">'</span><span class="s1">Insert Name</span><span class="dl">'</span><span class="si">}</span> <span class="p">&lt;/</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Text</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nc">Col</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nc">Row</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Body</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nc">Card</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nc">Col</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nc">Col</span> <span class="na">lg</span><span class="p">=</span><span class="si">{</span><span class="mi">8</span><span class="si">}</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nc">Card</span> <span class="na">className</span><span class="p">=</span><span class="s">"mb-4 border border-black antw"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Header</span> <span class="na">as</span><span class="p">=</span><span class="s">"h3"</span> <span class="na">className</span><span class="p">=</span><span class="s">"text-center"</span><span class="p">&gt;</span>Recent Posts<span class="p">&lt;/</span><span class="nc">Card</span><span class="p">.</span><span class="nc">Header</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nc">Card</span><span class="p">&gt;</span>
+            <span class="si">{</span><span class="nx">posts</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">post</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+              <span class="kd">const</span> <span class="nx">relatedComments</span> <span class="o">=</span> <span class="nx">comments</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">comment</span> <span class="o">=&gt;</span> <span class="nx">comment</span><span class="p">.</span><span class="nx">uniqueId</span> <span class="o">===</span> <span class="nx">post</span><span class="p">.</span><span class="nx">_id</span><span class="p">);</span>
+              <span class="k">return</span> <span class="p">(</span>
+                <span class="p">&lt;</span><span class="nc">Col</span> <span class="na">md</span><span class="p">=</span><span class="si">{</span><span class="mi">12</span><span class="si">}</span> <span class="na">key</span><span class="p">=</span><span class="si">{</span><span class="nx">post</span><span class="p">.</span><span class="nx">_id</span><span class="si">}</span> <span class="na">className</span><span class="p">=</span><span class="s">"mb-4"</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nc">PostItem</span>
+                    <span class="na">post</span><span class="p">=</span><span class="si">{</span><span class="nx">post</span><span class="si">}</span>
+                    <span class="na">comments</span><span class="p">=</span><span class="si">{</span><span class="nx">relatedComments</span> <span class="o">||</span> <span class="p">[]</span><span class="si">}</span>
+                  <span class="p">/&gt;</span>
+                <span class="p">&lt;/</span><span class="nc">Col</span><span class="p">&gt;</span>
+              <span class="p">);</span>
+            <span class="p">})</span><span class="si">}</span>
+          <span class="p">&lt;/</span><span class="nc">Col</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nc">Row</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nc">Container</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">)</span> <span class="p">:</span> <span class="p">&lt;</span><span class="nc">LoadingSpinner</span> <span class="p">/&gt;;</span>
+<span class="p">};</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">MyProfile</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="add-post">Add Post</h3>
+<p>Other than the profile page, I worked on the backend for a portion of the post items, and the home page. The posts are filled with information gained from teh create post form, alongside subscfriptions from multiple databases. I added the tags collection to contain a dataset of all countries a post could be affiliated with. The tags collection is loaded on server startup with 20 countries that offer foreign exchange programs within UH, and the collection itself is then used to display the tags within the home page and create post page.</p>
+
+<p>On the create post page, I placed a select element into the form to gather user data for the country affiliated with the post they would publish towards the site. The options to select were generated from the tags collection that was made on server startup. After the user clicks the submit button, the post is created, ans stored ina posts collection, while another collection called posttags recieves teh input of the posts unique id and the selected country tag, recieving an element with both pieces of information acting as a link for the tag and post.</p>
+
+<p align="center">
+  <img width="620px" height="320px" src="../img/manoaexchange.com_filter_China.png" />
+</p>
+
+<h3 id="home-page">Home Page</h3>
+
+<p>The home page utilizes the tags to populate a carousel that my teammate designed with the possible countries that can be the tags of posts. In the home page, I designed the tags to be displayed as buttons that can be clicked to filter through posts by the tags the posts are affiliated with. Every tag is clickable and redirects the user to a page where only posts with the chosen tags are rendered to the page. I learned how to redirect users to a page related to the element they clicked with the link components that take input from the button to redirect users to a url with the input information mutating the output url. The page you are redirected to is a filter page with the id of the tag, that you recieve in order to filter through the post tags collection to render posts that contain only that tag. The carousel ensures that the buttons will only take one row of space in the home page, making the efficiency rate higher.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Overall this was a thrilling experience that gave me insght into the usual practices that occur in web development, and how web developers cooperate in teams to develop the variety of aspects that compose a site. I learned various new skills and enhanced my understanding of impportant knowledge pertaining to javascipt html web development and how to launch it for the public to experience. My comprehension of the steps needed to create a frontend and backend experience for a web application enhanced further with this projects completion.</p>
+
+<p>The project home page can be found with <a href="https://manoa-exchange.github.io/">This</a> link</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

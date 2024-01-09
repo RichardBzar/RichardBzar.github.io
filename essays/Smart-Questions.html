@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="An Overflow Of Inquiry | Richard Baltazar | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/richardbzar.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Richard Baltazar | Professional Portfolio">
+    <meta property="og:url" content="https://RichardBzar.github.io/essays/Smart-Questions.html">
+    <meta property="og:title" content="An Overflow Of Inquiry | Richard Baltazar | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/richardbzar.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>An Overflow Of Inquiry | Richard Baltazar | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Richard Baltazar</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">An Overflow Of Inquiry</h1>
+  <span class="date">07 Sep 2023</span>
+  <hr>
+  <p><img width="225px" height="225px" src="../img/sflow-logo.png" class="img-thumbnail" /></p>
+
+<h2 id="how-smart-questions-are-an-essential-tool-for-software-engineeers">How SMART Questions Are An Essential Tool For Software Engineeers</h2>
+
+<p>Sometimes, a software developer would find themselves lost in a clueless situation where they don’t have any idea what to do next. In this occasion, what would be the best option for the developer? Stack Overflow? Yeah…. prob 9/10 times, but how do you display your worries in a set of words that form an inquiry that would get you most if not all the answers you had hoped to gain? the answer to this is to ask a SMART question on the forum. With the advent of ChatGPT, the importance of formatting your words correctly in a question are magnified drastically. In internet forums, much like chatgpt, a post would need to be formatted to a point where the overall context, the question, and what you’re trying to find out can be seen through you’re words posted. In forums, the user/ the software engineer has a goal they want to achieve, smart questions are essential to accomplish this as they help give a more appropriate answer that solves the post.</p>
+
+<h2 id="unknown-technical-processes">Unknown Technical Processes</h2>
+
+<p>SMART questions can be found in multiple forums, one such forum is stack overflow. In stack overflow, one of the posts that ask a smart question probes an answer for the inquiry about <a href="https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array">“Why is processing a sorted array faster than processing an unsorted array?”</a>. 
+This question from stack overflow has the user ask the forum, a question that although sounding easy to explain, once you go in depth to it is hard to clarify clearly. The question the user asks is, why would processing a sorted array be faster than processing an unsorted array?. The user in the forum had a sudden curiosity as he experienced a programming situation where somehthing unexpected occured, a difference in completion for the same task on two different arrays where one was sorted and the other wasn’t. He had used the inputted array in an algorithm where being sorted theoretically wouldn’t affect the runtime of the algorithm, as no sorting was needed to lower the overall runtime. Although the algorithm was unambiguous in the code to filter through an array, the user still had a lower recorded time on presorted arrays over unsorted arrays. Because this question had all the context given, an answer with a detialed analogy had been given, one where it explained clearly how the sorted array allowed a predicting system to run through it faster, much like a train going on stops where they know which turn to take. The sorted array had the computers prediction system go through it faster as their was an established pattern, not like the unsorted chaotic elements of the opposing array. The question was formatted in a way that allowed relatable interepreations to be explained to the asker.</p>
+
+<p>This is the C++ code the user provides in the post that allows the sorted array to be processed faster</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100000</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">c</span> <span class="o">&lt;</span> <span class="n">arraySize</span><span class="p">;</span> <span class="o">++</span><span class="n">c</span><span class="p">)</span>
+        <span class="p">{</span>   <span class="c1">// Primary loop.</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">128</span><span class="p">)</span>
+                <span class="n">sum</span> <span class="o">+=</span> <span class="n">data</span><span class="p">[</span><span class="n">c</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="the--detrimental-ambiguity-of-not-so-smart-questions">The  Detrimental Ambiguity Of Not So Smart Questions</h2>
+
+<p>If a forum is not explicit, explaining all context towards the intended problem, people would find it hard to answer the post, as the question may be too ambiguous in its format. Having a question being broad makes it harder for people to find a solution that encompasses the problem, this was the case for the stack overflow post asking  <a href="https://stackoverflow.com/questions/245062/whats-the-difference-between-javascript-and-java#:~:text=Java%20is%20class%2Dbased%3B%20JavaScript,constructors%22%20are%20just%20standard%20functions.">“What is the difference between java and javascript?”</a>. Unlike the previous smart question which provides a context to the situation where it seemed ubnderstandable that they would not be able to find an answer elsewhere, this question had broad contexts that allowed for more general interepretation of the question. There is no added context in the prompt, just this single question that seems broad, “What is the difference between java and javascript?”. This question and post isn’t so smart as the user would be able to find the diffrences of java and javascript in other sources before making this post, which would allow a more specialized smart question to be made at the time, such as “why is the syntax for creating variables in javascript is so different compared to java?” Having a general answer would also be detrimental to learning more about the said question, as details would be omitted to give a more convenient explanation for the solver to answer the broad topic. The answers for this question had a variety of ranges that explains alot of aspects for each language that differs from each other that although are relatable to the question, may not be what the poster is looking for.</p>
+
+<h2 id="overall-need-for-software-engineeers-and-smart-questions">Overall Need For Software Engineeers And Smart Questions</h2>
+
+<p>Overall, SMART questions are a key tool that can’t be skipped to have a quick convenient question replace it. It is important to be precise and explicit when asking a question, keep all context in the open and clearly state the goal that you want achieved while answering the question. A more detailed question allows for a more detailed answer and a keen understanding of the problem that occur in the present. On the other hand, a not so smart question may lead to the answer enver being found or the answer being too ambiguous to make an impact for your predicaments.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
