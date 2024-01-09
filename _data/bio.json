@@ -4,7 +4,7 @@
     "label": "Student",
     "picture": "https://github.com/richardbzar.png",
     "email": "richardbtzar@gmail.com",
-    "phone": "808-800-1539",
+    "phone": "(808) 800-1539",
     "website": "https://richardbzar.github.io",
     "summary": "I am studying for a B.A. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Fall, 2024.",
     "location": { "address": "", "postalCode": "96811", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
@@ -38,10 +38,10 @@
       "startDate": "2020-08-21",
       "endDate": "Present",
       "courses": [
-        "ICS 311 Algorithms",
         "MATH 242 Calculus 2",
-        "ICS 314: Softwaer Engineering",
         "ICS 211: Intro to Computer Science II",
+        "ICS 311 Algorithms",
+        "ICS 314: Software Engineering",
         "ICS 321: Database Systems"
       ]
     },
