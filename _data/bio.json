@@ -1,0 +1,98 @@
+{
+  "basics": {
+    "name": "Richard Baltazar",
+    "label": "Student",
+    "picture": "https://github.com/richardbzar.png",
+    "email": "richardbtzar@gmail.com",
+    "phone": "(808) 800-1539",
+    "website": "https://richardbzar.github.io",
+    "summary": "I am studying for a B.A. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Fall, 2024.",
+    "location": { "address": "", "postalCode": "96811", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "profiles": [
+      { "network": "github", "username": "RichardBzar", "url": "http://github.com/richardbzar" },
+      { "network": "linkedin", "username": "Richard Baltazar", "url": "https://www.linkedin.com/in/richard-baltazar-91330b28a/" },
+    ]
+  },
+  "interests": [
+    { "name": "Game Development" },
+    { "name": "Cloud Computing" },
+    { "name": "VR/AR Development" },
+    { "name": "Chinese Webnovels" },
+    { "name": "Web/Mobile App Development"}
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [ "C", "C++", "Java", "Javascript", "HTML", "CSS", "React Bootstrap" ]
+    },
+    {
+      "name": "Toolsets/OS",
+      "keywords": [ "MacOS", "Windows", "Git/GitHub", "Meteor" ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Science (expected Fall, 2024)",
+      "studyType": "B.A.",
+      "startDate": "2020-08-21",
+      "endDate": "Present",
+      "courses": [
+        "MATH 242 Calculus 2",
+        "ICS 211: Intro to Computer Science II",
+        "ICS 311 Algorithms",
+        "ICS 314: Software Engineering",
+        "ICS 321: Database Systems"
+      ]
+    },
+    {
+      "institution": "Comptia IT Certification",
+      "area": "Comptia A+ 1101-1102",
+      "studyType": "Computer Troubleshooting",
+      "startDate": "2022",
+      "courses": [
+        "Troubleshooting",
+        "Critical Thinking",
+        "Modern technology Comprehension"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Honolulu Community College",
+      "position": "Student Assistant",
+      "website": "",
+      "startDate": "2024-04-24",
+      "endDate": "Present",
+      "summary": "Student office assistant for the academic advising office",
+      "highlights": [
+        "Communicated with students to conduct informal discussions about the programs offered by Honolulu Community College",
+        "Perform clerk tasks with office hardware like printers and computers, and software, like excel and word"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Malama A'ina",
+      "position": "Campus Volunteer",
+      "startDate": "2019-01-25",
+      "endDate": "2019-03-11",
+      "highlights": [
+        "Collaborate with a group of volunteers to perform sanitation tasks along the HCC campus ranging from the library to the cafeteria"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Dean's List",
+      "date": "2020-2021",
+      "awarder": "UH Manoa",
+      "summary": "Given to students who maintain a GPA of 3.5 or above"
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}
